@@ -1,0 +1,151 @@
+@import "../../_globalColor";
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.empty-div {
+  margin-bottom: 40px;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 40px;
+}
+.download-link-button {
+  text-decoration: none;
+}
+
+.greeting-text {
+  font-size: 30px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center;  // Aligns the image to the right
+  align-items: center - middle;        // Vertically centers the image
+  width: 100%;                // Ensures the container takes the full width
+}
+
+.greeting-image-div > img {
+  width: 300px;  // Set a fixed width for the image (adjust size as needed)
+  height: 350px; // Set the height to match the width for a perfect circle
+  border-radius: 50%;  // Makes the image round
+  object-fit: cover;   // Ensures the image covers the circle without distortion
+  object-position: 0% 0%;  // Focus on the top part of the image (adjust as needed)
+}
+
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .greeting-text {
+    font-size: 50px;
+  }
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+  .greeting-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  /*
+  .greeting-image-div {
+    display: flex;
+    justify-content: right;  // Horizontally center the image
+    align-items: right;      // Vertically center the image
+    height: 250px;            // Set height (adjust as needed)
+  }
+  
+  .greeting-image-div > img {
+    width: 150px;  // Set a fixed size for the round image (adjust as needed)
+    height: 150px; // Set the height to match the width for a perfect circle
+    border-radius: 50%;  // Make the image round
+    object-fit: cover;   // Ensure the image covers the circle without distortion
+  }
+  
+  */
+}
+
+@media (max-width: 200px) {
+  .main {
+    width: auto;
+  }
+}
