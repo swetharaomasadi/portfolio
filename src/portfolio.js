@@ -144,7 +144,7 @@ const educationInfo = {
       schoolName: "New Kakathiya Model School",
       logo: require("./assets/images/newkakatiya.png"),
       subHeader: "School.",
-      duration: "June 2027 - May 2020",
+      duration: "June 2007 - May 2020",
     },
   ]
 };
