@@ -1,8 +1,8 @@
 {
-  "homepage": "https://developerfolio.js.org/",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://swetharaomasadi.github.io/portfolio",
   "dependencies": {
     "classnames": "^2.5.1",
     "colorthief": "^2.3.0",
