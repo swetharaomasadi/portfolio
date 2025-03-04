@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 // import "./StartupProjects.scss"; // Removed styles if you don't need them.
 import StyleContext from "../../contexts/StyleContext";
 

@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Fade } from "react-reveal";
+import React, {useState, useEffect, useContext} from "react";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Blogs() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
 
   function setMediumBlogsFunction(array) {
@@ -15,9 +15,9 @@ export default function Blogs() {
     return typeof html === "string"
       ? html
           .split(/<\/p>/i)
-          .map((part) => part.split(/<p[^>]*>/i).pop())
-          .filter((el) => el.trim().length > 0)
-          .map((el) => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
+          .map(part => part.split(/<p[^>]*>/i).pop())
+          .filter(el => el.trim().length > 0)
+          .map(el => el.replace(/<\/?[^>]+(>|$)/g, "").trim())
           .join(" ")
       : NaN;
   }
@@ -26,12 +26,12 @@ export default function Blogs() {
     // Fetch blogs from an API or use local data
     const getProfileData = () => {
       fetch("/blogs.json")
-        .then((result) => {
+        .then(result => {
           if (result.ok) {
             return result.json();
           }
         })
-        .then((response) => {
+        .then(response => {
           setMediumBlogsFunction(response.items);
         })
         .catch(function (error) {
@@ -52,7 +52,9 @@ export default function Blogs() {
         <div className="blog-header">
           <h1 className="blog-header-text">Blogs</h1>
           <p
-            className={isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"}
+            className={
+              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
+            }
           >
             Explore my latest blogs.
           </p>

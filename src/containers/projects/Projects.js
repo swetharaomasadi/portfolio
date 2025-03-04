@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
+import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks, workExperiences } from "../../portfolio"; // Ensure workExperiences is imported here
+import {openSource, socialMediaLinks, workExperiences} from "../../portfolio"; // Ensure workExperiences is imported here
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
 
@@ -12,21 +12,21 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   // Extract projects from workExperiences
-  const { projects } = workExperiences;
+  const {projects} = workExperiences;
 
   useEffect(() => {
     const getRepoData = () => {
       fetch("/profile.json")
-        .then((result) => {
+        .then(result => {
           if (result.ok) {
             return result.json();
           }
           throw result;
         })
-        .then((response) => {
+        .then(response => {
           setrepoFunction(response.data.user.pinnedItems.edges);
         })
         .catch(function (error) {

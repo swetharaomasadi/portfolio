@@ -55,19 +55,18 @@
 
 .greeting-image-div {
   display: flex;
-  justify-content: center;  // Aligns the image to the right
-  align-items: center - middle;        // Vertically centers the image
-  width: 100%;                // Ensures the container takes the full width
+  justify-content: center; // Aligns the image to the right
+  align-items: center - middle; // Vertically centers the image
+  width: 100%; // Ensures the container takes the full width
 }
 
 .greeting-image-div > img {
-  width: 300px;  // Set a fixed width for the image (adjust size as needed)
+  width: 300px; // Set a fixed width for the image (adjust size as needed)
   height: 350px; // Set the height to match the width for a perfect circle
-  border-radius: 50%;  // Makes the image round
-  object-fit: cover;   // Ensures the image covers the circle without distortion
-  object-position: 0% 0%;  // Focus on the top part of the image (adjust as needed)
+  border-radius: 50%; // Makes the image round
+  object-fit: cover; // Ensures the image covers the circle without distortion
+  object-position: 0% 0%; // Focus on the top part of the image (adjust as needed)
 }
-
 
 .wave-emoji {
   animation-duration: 1.8s;

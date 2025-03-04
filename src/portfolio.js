@@ -4,15 +4,15 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import MyImage from './assets/images/image.jpg';  // Import the image
+import MyImage from "./assets/images/image.jpg"; // Import the image
 
 //import MyImage from './assets/images/image.jpg';  // Import the image
 
- const splashScreen = {
+const splashScreen = {
   //background: "#000000", // Background color for the splash screen
-  image: "/image.jpg",   // Path relative to the public folder
+  image: "/image.jpg", // Path relative to the public folder
   alt: "MyImage",
-  displaySplash: true       // Alt text for accessibility
+  displaySplash: true // Alt text for accessibility
 };
 
 // Summary And Greeting Section
@@ -21,9 +21,7 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
-
 const greeting = {
-  
   title: "Hello, I'm Masadi Swetha",
   subTitle: emoji(
     "A passionate Software Developer and AI Engineer 🚀 with experience in building web applications and training models, possessing a deep understanding of machine learning and deep learning."
@@ -37,8 +35,8 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/swetharaomasadi",
-    linkedin: "https://www.linkedin.com/in/swetha-masadi-8ba193267",
-    gmail: "swetharaomasadi@gmail.com",
+  linkedin: "https://www.linkedin.com/in/swetha-masadi-8ba193267",
+  gmail: "swetharaomasadi@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -50,13 +48,21 @@ const skillsSection = {
   title: "What I Do",
   subTitle: "Passionate Software Developer with Expertise in AI",
   skills: [
-    emoji("⚡ Build highly interactive front-end and user interfaces for web and mobile applications"),
-    emoji("⚡ Design and develop robust machine learning and deep learning models for real-world applications"),
-    emoji("⚡ Create Progressive Web Applications (PWAs) and Single Page Applications (SPAs)"),
-    emoji("⚡ Work on Machine Learning, Deep Learning, Generative AI, and Artificial Intelligence projects"),
+    emoji(
+      "⚡ Build highly interactive front-end and user interfaces for web and mobile applications"
+    ),
+    emoji(
+      "⚡ Design and develop robust machine learning and deep learning models for real-world applications"
+    ),
+    emoji(
+      "⚡ Create Progressive Web Applications (PWAs) and Single Page Applications (SPAs)"
+    ),
+    emoji(
+      "⚡ Work on Machine Learning, Deep Learning, Generative AI, and Artificial Intelligence projects"
+    )
   ],
 
-   SoftwareSkills : [
+  SoftwareSkills: [
     {
       skillName: "C Programming",
       fontAwesomeClassname: "fas fa-terminal"
@@ -118,9 +124,8 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-language"
     }
   ],
-  
-  display : true // Set false to hide this section, defaults to true
-  
+
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -131,21 +136,22 @@ const educationInfo = {
     {
       schoolName: "SR University",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Computer Science with a specialization in Artificial Intelligence and Machine Learning.",
-      duration: "September 2022 - May 2026",
+      subHeader:
+        "Computer Science with a specialization in Artificial Intelligence and Machine Learning.",
+      duration: "September 2022 - May 2026"
     },
     {
       schoolName: "Shivani Junior College",
       logo: require("./assets/images/shivani.png"),
       subHeader: "Intermediate College.",
-      duration: "September 2020 - May 2022",
+      duration: "September 2020 - May 2022"
     },
     {
       schoolName: "New Kakathiya Model School",
       logo: require("./assets/images/newkakatiya.png"),
       subHeader: "School.",
-      duration: "June 2007 - May 2020",
-    },
+      duration: "June 2007 - May 2020"
+    }
   ]
 };
 
@@ -180,7 +186,7 @@ const workExperiences = {
       role: "Summer Intern",
       company: "National Institute of Technology and Science - Warangal",
       companylogo: require("./assets/images/nit.png"),
-      date: "June 2024 – July 2024",
+      date: "June 2024 – July 2024"
       /*
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
@@ -191,30 +197,33 @@ const workExperiences = {
     }
   ],
 
-   projects : [
+  projects: [
     {
       title: "Airlines Booking",
-      description: "This is my first project in my B.Tech first year, and it is used for booking flight tickets. It was developed using the C language.",
-      link: "https://github.com/swetharaomasadi/airlines-booking",
+      description:
+        "This is my first project in my B.Tech first year, and it is used for booking flight tickets. It was developed using the C language.",
+      link: "https://github.com/swetharaomasadi/airlines-booking"
     },
     {
-        title: "Liver Disorder Prediction",
-        description: "Developed a liver disorder prediction system using Python, utilizing machine learning algorithms to analyze medical data and accurately identify potential liver disorders.",
-        link: "https://github.com/swetharaomasadi/statml_complete_project.ipynb",
+      title: "Liver Disorder Prediction",
+      description:
+        "Developed a liver disorder prediction system using Python, utilizing machine learning algorithms to analyze medical data and accurately identify potential liver disorders.",
+      link: "https://github.com/swetharaomasadi/statml_complete_project.ipynb"
     },
     {
       title: "Animal Image Classification",
-      description: "Designed and implemented an animal image classification system using Python, focusing on training machine learning models to accurately categorize images into specific animal classes.",
-      link: "https://github.com/swetharaomasadi/animals_image_classification",
-  },
-  {
-    title: "Heart Failure Prediction System with Web Interface",
-    description: "Developed and implemented a heart failure prediction system using Python, leveraging machine learning techniques to analyze patient data and predict the likelihood of heart failure. Additionally, designed a user-friendly web interface using Flask to provide seamless access to predictions and insights for healthcare professionals and patients.",
-    link: "https://github.com/swetharaomasadi/Heart-Failure-Prediction-System-with-Web-Interface",
-},
-  ],
+      description:
+        "Designed and implemented an animal image classification system using Python, focusing on training machine learning models to accurately categorize images into specific animal classes.",
+      link: "https://github.com/swetharaomasadi/animals_image_classification"
+    },
+    {
+      title: "Heart Failure Prediction System with Web Interface",
+      description:
+        "Developed and implemented a heart failure prediction system using Python, leveraging machine learning techniques to analyze patient data and predict the likelihood of heart failure. Additionally, designed a user-friendly web interface using Flask to provide seamless access to predictions and insights for healthcare professionals and patients.",
+      link: "https://github.com/swetharaomasadi/Heart-Failure-Prediction-System-with-Web-Interface"
+    }
+  ]
 };
-
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -225,10 +234,7 @@ const openSource = {
   display: true // Leave this as true to show the section
 };
 
-
 // Some big projects you have worked on
-
-
 
 // Achievement Section
 // Include certificates, talks etc
@@ -251,7 +257,8 @@ const achievementSection = {
       ]
     },
     {
-      title: "4th rank in the Artificial Intelligence competition organized by SRM University",
+      title:
+        "4th rank in the Artificial Intelligence competition organized by SRM University",
       image: require("./assets/images/srm.png"),
       //imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -316,7 +323,7 @@ const achievementSection = {
         }
       ]
     },
-    
+
     {
       title: "AWS Academy Graduate - Cloud Foundations",
       image: require("./assets/images/aws.png"),
@@ -339,8 +346,7 @@ const achievementSection = {
         }
       ]
     },
-    
-    
+
     {
       title: "Microsoft Certified: Azure AI Fundamentals",
       image: require("./assets/images/microsoft.png"),
@@ -383,10 +389,7 @@ const blogSection = {
 
 // Talks Sections
 
-
 // Podcast Section
-
-
 
 // Resume Section
 const resumeSection = {
@@ -399,14 +402,12 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎"),
-  subtitle:
-    "Discuss a project? My Inbox is open for all.",
+  subtitle: "Discuss a project? My Inbox is open for all.",
   number: "+91-8555934693",
   email_address: "swetharaomasadi@gmail.com"
 };
 
 // Twitter Section
-
 
 export {
   illustration,

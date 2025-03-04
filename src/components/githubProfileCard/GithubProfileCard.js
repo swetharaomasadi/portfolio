@@ -2,9 +2,9 @@ import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import emoji from "react-easy-emoji";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 
-export default function GithubProfileCard({ prof }) {
+export default function GithubProfileCard({prof}) {
   // Directly assigning "Yes" or "No" for hireable status
   const hireableStatus = prof.hireable ? "Yes" : "No";
 
@@ -16,7 +16,9 @@ export default function GithubProfileCard({ prof }) {
           <div className="main-content-profile">
             <div className="blog-header">
               {/* If you still want to display contact information, you can manually set it here */}
-              <p className="subTitle blog-subtitle">Discuss a project? My inbox is open for all.</p>
+              <p className="subTitle blog-subtitle">
+                Discuss a project? My inbox is open for all.
+              </p>
             </div>
             <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             {prof.location !== null && (
