@@ -3,9 +3,6 @@
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "20.17.0"
-  },
   "dependencies": {
     "classnames": "^2.5.1",
     "colorthief": "^2.3.0",
