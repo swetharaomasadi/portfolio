@@ -3,6 +3,9 @@
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.x || >=20.x"
+  },
   "dependencies": {
     "classnames": "^2.5.1",
     "colorthief": "^2.3.0",
@@ -23,12 +26,12 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
